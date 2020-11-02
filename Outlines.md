@@ -1,3 +1,3 @@
 # Story Outlines
 
-This documentation is in progress.  Please check back soon or email [mailto:inquiries@presalytics.io](inquiries@presalytics.io) for help.
+This documentation is in progress.  Please check back soon or email [inquiries@presalytics.io](mailto:inquiries@presalytics.io) for help.
