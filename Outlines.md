@@ -19,32 +19,32 @@ A Story's outline should conform to the the [Story Outline JSON Schema](https://
 * `themes`: A list of themes of the story outline.  A theme typically defines default colors and text formats (e.g., fonts) for a story.  
 
 
-### Pages
+### Pages {#pages}
 
 A `page` within a Story outline defines instructions of converting a set of [widgets](#widgets) to html.  The page object governs the layout of widgets on page in the story. A page object has the following properties:
 
 * `name`: The name of the page
 
-* `kind`: A unique string that maps to class that implements the [PageTemplateBase Class](https://presalytics.github.io/python-client/presalytics/index.html#presalytics.PageTemplateBase) in the Presalytics Pythonlib.  Classes that implement this class have `__component_kind__` property that maps the the kind of this page, and a `render()` method that implements this class.
+* `kind`: A unique string that maps to class that implements the [PageTemplateBase Class](https://presalytics.github.io/python-client/presalytics/index.html#presalytics.PageTemplateBase) in the Presalytics Python library.  Classes that implement this class have `__component_kind__` property that maps the the kind of this page, and a `render()` method that implements this class.
 
 * `widgets`: A list of [widgets](#widgets) that this page renders.  See Below for more information
 
 * `plugins`: A list of plugins used when rendering this page.  [See Below](#plugins).
 
 
-### Widgets
+### Widgets {#widgets}
 
 The `widget` object is the lowest-level building block for Presalytics Stories. A widget is a flexible object that can map a data source (e.g., a SQL query) to an html fragment.  
 
 * `name`: The name of the widget
 
-* `kind`: A unique string that maps to class that implements the [WidgetBase Class](https://presalytics.github.io/python-client/presalytics/index.html#presalytics.WidgetBase) in the Presalytics Pythonlib.  Classes that implement this class have `__component_kind__` property that maps the the kind of this page, and a `render()` method that implements this class.
+* `kind`: A unique string that maps to class that implements the [WidgetBase Class](https://presalytics.github.io/python-client/presalytics/index.html#presalytics.WidgetBase) in the Presalytics Python library.  Classes that implement this class have `__component_kind__` property that maps the the kind of this page, and a `render()` method that implements this class.
 
 * `data`: A set of requeirement parameters needed to convert this widget into html.  The strcuture of the data object will be different for each widget kind.
 
 * `plugins`: A list of plugins used when rendering this page.  [See Below](#plugins).
 
-### Plugins
+### Plugins {#plugins}
 
 `plugin` objects are resuable scripts and styles that are used help pages and widgets render.  For example, if a widget requires a certain javascript library in order to render properly, a `script` plugin can be used to place a script tag in the html.  Libraries such as `React.js`, `D3.js`, etc.  can all be loaded natively in a Story, and rendered accordingly. A `style` plugin can be used load either custom inline styles or and external link (e.g., bootstrap).  
 
