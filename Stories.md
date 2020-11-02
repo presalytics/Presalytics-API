@@ -24,13 +24,15 @@ Every story has a few properties that users should be familiar with:
 
 * `collaborators`: A story's collaborators are other Presalytics.io users that have permission to interact with your story.  Permissions you can grant are as follows:
 
-| Permission | Description |
-| :--------: |-------------|
-| Viewer | Can view the story |
-| Promoter | Can view the story and share it with other Presalytics users |
-| Editor | All the permissions of the promoter, and can make changes to the Story object itself, including the Story's outline |
-| Owner | All of the permissions of an editor, with the additional ability to delete the Story |
-| Creator | Same as owner, but reserved for the user that initially created the story |
+
+    | Permission | Description |
+    | :--------: |-------------|
+    | Viewer | Can view the story |
+    | Promoter | Can view the story and share it with other Presalytics users |
+    | Editor | All the permissions of the promoter, and can make changes to the Story object itself, including the Story's outline |
+    | Owner | All of the permissions of an editor, with the additional ability to delete the Story |
+    | Creator | Same as owner, but reserved for the user that initially created the story |
+
 
 * `ooxml_documents`: This is a list of Office Open Xml documents (e.g., Microsoft Office, Google Slides) that are considered "subdocuments" of this story.  One story can read and render content from different subdocuments.  For exmaple, A story could rendered from multiple  `.pptx` files, each of which is maintained by a different user.  This simplifies version control for collaborative teams.  Support for other file types (e.g., `.xlsx`, `.docx`) is being added. 
 
