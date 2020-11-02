@@ -24,7 +24,7 @@ Every story has a few properties that users should be familiar with:
 
 * `collaborators`: A story's collaborators are other Presalytics.io users that have permission to interact with your story.  Permissions you can grant are as follows:
 
-
+{:.table}
     | Permission | Description |
     | :--------: |-------------|
     | Viewer | Can view the story |
