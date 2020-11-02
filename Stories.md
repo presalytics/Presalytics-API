@@ -10,7 +10,7 @@ In the context the Presalytics.io, the story is the root object of the applicati
 
 Every story has a few properties that users should be familiar with:
 
-* `id`: The story fingerprint.  A unique identifier for a give story.  Needed to make API calls.
+* `id`: The story fingerprint.  A unique identifier for a given story.  Needed to make API calls.
 
 * `title`: The story's title.  A few describing the story to its audience
 
